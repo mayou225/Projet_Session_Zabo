@@ -1,3 +1,14 @@
+document.getElementById('lang-en').addEventListener('click', function() {
+    // Redirigez vers la version anglaise du site
+    window.location.href = 'index-en.html';
+   
+});
+
+document.getElementById('lang-fr').addEventListener('click', function() {
+    // Redirigez vers la version française du site
+    window.location.href = 'index-fr.html';
+   
+});
 
 // Validation des champs lors de la soumission du formulaire
 function verif() {

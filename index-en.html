@@ -7,74 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/moncode.js" defer></script>
-    <title>Acceuil</title>
+    <title>Home</title>
 </head>
 
 <body>
-    <!--En-tete-->
+    <!--Header-->
     <header class="header wp-100 bd d-inline-flex bd-radus-5px">
         <div class="w-50">
             <img src="image/uqtr.png" alt="universite quebec a trois riviere" width="312">
         </div>
         <div class="w-50 text-end pd-13 ft-familly">
-            <h2>Loisir pour les étudiants!</h2>
-            <!-- Boutons pour changer la langue -->
+            <h2>Student Leisure!</h2>
+            <!-- Language change buttons -->
             <button id="lang-en">English</button>
             <button id="lang-fr">Français</button>
         </div>
-
     </header>
-    <!-- une section principale (<section>) divisée en deux colonnes.-->
+    <!-- Main section divided into two columns.-->
     <section class="wp-100 d-inline-flex mt-12">
-        <!--1ere colonne-->
+        <!--1st column-->
         <div class="wp-20 mr-09">
-            <!--La première colonne est une barre de navigation verticale (<nav>) avec des liens vers différentes pages.-->
+            <!--The first column is a vertical navigation bar (<nav>) with links to different pages.-->
             <nav>
                 <ul class=" bd bd-radus-5px m-0 p-0 list-style-none ">
                     <li>
-                        <a id="home" href="index.html" class="nav-main text-decoration-none d-block text-dark l1 ">Acceuil</a>
+                        <a id="home" href="index-en.html" class="nav-main text-decoration-none d-block text-dark l1 ">Home</a>
                         <ul class="list-style-type-non">
                             <li><a href="#" class="text-decoration-none text-white">1</a></li>
                             <li><a href="#" class="text-decoration-none text-white">2</a></li>
                             <li><a href="#" class="text-decoration-none text-white">3</a></li>
                         </ul>
                     </li>
-                    <li><a href="inscription.html" class="nav-main text-decoration-none  d-block text-dark">S'inscrire</a></li>
-                    <li><a href="carte.html" class="nav-main text-decoration-none border-top-black d-block text-dark">Localiser une activité</a></li>
+                    <li><a href="inscription-en.html" class="nav-main text-decoration-none  d-block text-dark">Sign Up</a></li>
+                    <li><a href="carte-en.html" class="nav-main text-decoration-none border-top-black d-block text-dark">Locate an Activity</a></li>
                 </ul>
             </nav>
         </div>
-        <!--2eme colonne-->
-        <!--La deuxième colonne contient des informations sur le but du site, une liste d'étapes à suivre, et une liste des activités disponibles présentée dans un tableau (<table>).-->
+        <!--2nd column-->
+        <!--The second column contains information about the purpose of the site, a list of steps to follow, and a list of available activities presented in a table (<table>).-->
         <div class="bd bd-radus-5px pd-12 wp-100">
-            <h3>Notre but:</h3>
-            <p>Notre site propose aux étudiants désireux de réaliser une ou plusieurs activités de loisir de rejoindre
-                les différentes activités proposées dans la liste suivantes en 3 étapes
+            <h3>Our Goal:</h3>
+            <p>Our site offers students wishing to engage in one or more leisure activities to join
+                the different activities listed below in 3 steps.
             </p>
             <ul>
-                <li>S'inscrire</li>
-                <li>Choisir une ou plusieurs activités</li>
-                <li>Commencer les activités en groupe</li>
+                <li>Sign up</li>
+                <li>Choose one or more activities</li>
+                <li>Start the activities in a group</li>
             </ul>
 
-            <p>Les différentes activités des groupes sont sous la responsabilité des professionnelles. Il s'agit de
-                passionnés de domaine qui vous feront découvrir des pans inédits de vos loisirs préfèrés.
-                Qu'attendez-vous...?. Rejoignez-nous!
+            <p>The various activities of the groups are under the responsibility of professionals. They are
+                passionate individuals in their field who will introduce you to new aspects of your favorite hobbies.
+                What are you waiting for...? Join us!
             </p>
 
-            <h3>Liste des activités disponibles</h3>
+            <h3>List of available activities</h3>
 
             <table style="width:100%">
                 <tr class="bg-gray">
                     <th class="w-12 text-center text-white">#</th>
-                    <th class="text-center text-white">Activité</th>
-                    <th class="text-center text-white">Responsable</th>
-                    <th class="text-center text-white">Nombre d'inscrits</th>
+                    <th class="text-center text-white">Activity</th>
+                    <th class="text-center text-white">Responsible</th>
+                    <th class="text-center text-white">Number of Participants</th>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>Natation</td>
+                    <td>Swimming</td>
                     <td>Zabo Hyacinthe AKA</td>
                     <td class="text-center ft-weight">7</td>
                 </tr>
@@ -86,13 +84,13 @@
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Randonnée</td>
+                    <td>Hiking</td>
                     <td>Jobine Ndjotcha</td>
                     <td class="text-center ft-weight">10</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Gastronomie</td>
+                    <td>Gastronomy</td>
                     <td>Sarrah Rida Sbay</td>
                     <td class="text-center ft-weight">10</td>
                 </tr>
@@ -101,6 +99,8 @@
         </div>
     </section>
 
+    <!-- JavaScript to change language -->
+    <script src="js/moncode.js" defer></script>
 </body>
 
 </html>

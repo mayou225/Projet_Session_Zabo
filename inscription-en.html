@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/moncode.js" defer></script>
+    <title>Inscription</title>
+</head>
+
+<body>
+    <header class="header wp-100 bd d-inline-flex bd-radus-5px">
+        <div class="w-50">
+            <img src="image/uqtr.png" alt="universite quebec a trois riviere" width="312">
+        </div>
+        <div class="w-50 text-end pd-13 ft-familly">
+            <h2>Student Leisure!</h2>
+        </div>
+
+    </header>
+
+    <section class="wp-100 d-inline-flex mt-12">
+        <div class="wp-20 mr-09">
+            <nav>
+                <ul class=" bd bd-radus-5px m-0 p-0 list-style-none ">
+                    <li>
+                        <a id="home" href="index.html"
+                        class="nav-main text-decoration-none d-block text-dark l1 ">Home</a>
+                        <ul class="list-style-type-non">
+                            <li><a href="#" class="text-decoration-none text-white">1</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">2</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="inscription-en.html" class="nav-main text-decoration-none  d-block text-dark">Sign Up</a></li>
+                    <li><a href="carte-en.html"
+                        class="nav-main text-decoration-none border-top-black d-block text-dark">Locate an Activity</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="bd bd-radus-5px pd-12 wp-100">
+            <h3>Sign Up</h3>
+            <!--Mon formulaire-->
+            <form name="f" id="form" class="form" onSubmit="return verif()">
+                <div class="d-flex mb-12 form-control ">
+                    <div class="wp-20">
+                        <label for="fname">Name</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="fname" name="fname" > <br>
+                       
+                    </div>
+
+                </div>
+
+                <div class="d-flex mb-12 form-control ">
+                    <div class="wp-20">
+                        <label for="lname">First Name</label>
+
+                    </div>
+                   
+                    <div>
+                        <input type="text" id="lname" name="lname" > <br>
+                    </div>
+          
+
+                </div>
+
+                <div class="d-flex mb-12 form-control ">
+                    <div class="wp-20">
+                        <label for="date">Date of birth</label>
+                    </div>
+
+                    <div class="wp-20">
+                        <input type="date" id="date" name="date" style="width: 172px;">
+                    </div>
+
+                </div>
+
+                <div class="d-flex mb-12">
+                    <div class="wp-20">
+                        <label for="text">Sex</label>
+                    </div>
+
+                    <div class="wp-20">
+                        <input type="radio" id="r1" name="fav_language" value="homme">
+                        <label for="r1">Man</label>
+                        <input type="radio" id="r2" name="fav_language" value="femme">
+                        <label for="r2">Woman</label><br>
+                    </div>
+
+                </div>
+
+                <div class="d-flex mb-12">
+                    <div class="wp-20">
+                        <label for="text">Activity</label>
+                    </div>
+
+                    <div class="wp-20">
+                        <select name="activite" id="text" style="width: 172px;">
+                            <option value="1">Swimming</option>
+                            <option value="2">Badminton</option>
+                            <option value="3">Hiking</option>
+                            <option value="4">Gastronomy</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="d-flex mb-12">
+                    <div class="wp-20">
+                        <label for="motivations">Motives</label>
+                    </div>
+
+                    <div class="wp-20">
+                        <textarea id="motivations" name="motivations" rows="4" cols="50" style="width: 172px;">
+
+                        </textarea>
+                    </div>
+
+                </div>
+
+                <div>
+                    <input type="reset" name="res" id="res" value="Reset" onclick="effacerSaisie()">
+                    <input type="submit" name="sub" id="sub" value="validate" onsubmit="verif()">
+                </div>
+
+
+            </form>
+
+        </div>
+    </section>
+	
+	<!-- JavaScript pour changer la langue -->
+    <script src="js/moncode.js" defer></script>
+</body>
+
+</html>
